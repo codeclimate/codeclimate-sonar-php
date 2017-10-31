@@ -1,13 +1,4 @@
 apply plugin: "java"
-apply plugin: "idea"
-
-idea {
-    module {
-
-        downloadJavadoc = false
-        downloadSources = false
-    }
-}
 
 repositories {
     jcenter()
@@ -57,5 +48,13 @@ test {
     testLogging {
         events "passed", "skipped", "failed", "standardOut", "standardError"
         exceptionFormat "full"
+    }
+}
+
+apply plugin: "idea"
+idea {
+    module {
+        downloadJavadoc = false
+        downloadSources = false
     }
 }
