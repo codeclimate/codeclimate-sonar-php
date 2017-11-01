@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/2bdcb2e92bbc0efb855b/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate-sonar-php/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/2bdcb2e92bbc0efb855b/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate-sonar-php/test_coverage)
 
-`codeclimate-sonar-java` is a Code Climate engine that wraps [Sonarlint](http://www.sonarlint.org) in standalone mode.
+`codeclimate-sonar-php` is a Code Climate engine that wraps [Sonarlint](http://www.sonarlint.org) in standalone mode.
 
 ## Installation
 ```
@@ -38,7 +38,7 @@ exclude_paths:
 Ignore issues with severity below the minimum:
 ```
 engines:
-  sonar-java:
+  sonar-php:
     enabled: true
     config:
       minimum_severity: critical  # default: major
