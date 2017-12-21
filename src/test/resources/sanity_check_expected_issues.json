@@ -36,5 +36,24 @@
     "categories": [
       "Bug Risk"
     ]
+  },
+  {
+    "type": "issue",
+    "check_name": "php:S1068",
+    "severity": "major",
+    "description": "Remove this unused \"PRIVATE_CONST\" private field.",
+    "content": {
+      "body": "<p>If a <code>private</code> field is declared but not used in the program, it can be considered dead code and should therefore be removed. This will\nimprove maintainability because developers will not wonder what the variable is used for.</p>\n<h2>Noncompliant Code Example</h2>\n<pre>\nclass MyClass {\n  private $foo = 4;                       //foo is unused\n\n  public function compute($a) {\n    return $a * 4;\n  }\n}\n</pre>\n<h2>Compliant Solution</h2>\n<pre>\nclass MyClass {\n\n  public function compute($a) {\n    return $a * 4;\n  }\n}\n</pre>\n<h2>See</h2>\n<ul>\n  <li> <a href=\"https://www.securecoding.cert.org/confluence/x/SIIyAQ\">CERT, MSC12-CPP.</a> - Detect and remove code that has no effect </li>\n</ul>"
+    },
+    "location": {
+      "path": "php7_constants.php",
+      "lines": {
+        "begin": 7,
+        "end": 7
+      }
+    },
+    "categories": [
+      "Clarity"
+    ]
   }
 ]
