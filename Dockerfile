@@ -1,4 +1,4 @@
-FROM java:8-jdk-alpine
+FROM amazoncorretto:8-alpine3.14-jdk
 
 MAINTAINER Code Climate
 
