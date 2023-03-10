@@ -47,7 +47,7 @@ engines:
 
 ## Sonar Documentation
 
-http://www.sonarlint.org/commandline
+http://www.sonarlint.org/
 
 http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner
 
